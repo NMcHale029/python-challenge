@@ -46,7 +46,7 @@ print("-------------------------\n")
 print(f"Winner: {statistics.mode(candidate_list)}\n")
 print("-------------------------")
 
-#Writes Financial Analysis to text file in analysis folder
+#Writes election results to text file in analysis folder
 output_path = os.path.join('analysis', 'election_results.txt')
 
 with open(output_path, 'w') as txtfile:
