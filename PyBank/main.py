@@ -2,7 +2,7 @@ import os
 import csv
 
 # Navigating to the data file
-csvpath = os.path.join('PyBank', 'Resources', 'budget_data.csv')
+csvpath = os.path.join("PyBank", "Resources", "budget_data.csv")
 
 #opens the data file so it can be read
 with open(csvpath, 'r') as budget_data:
@@ -89,7 +89,7 @@ with open(csvpath, 'r') as budget_data:
     print(f'Greatest Decrease in Profits: {gd_date} (${greatest_decrease})') 
 
 #Writes Financial Analysis to text file in analysis folder
-output_path = os.path.join('analysis', 'Financial_Analysis.txt')
+output_path = os.path.join('PyBank', 'analysis', 'Financial_Analysis.txt') 
 
 with open(output_path, 'w') as txtfile:
     txtfile.write('Financial Analysis\n')

@@ -4,7 +4,7 @@ import statistics
 
 
 # Navigating to the data file
-csvpath = os.path.join('Resources', 'election_data.csv')
+csvpath = os.path.join('PyPoll', 'Resources', 'election_data.csv')
 
 #opens the data file so it can be read
 with open(csvpath, 'r') as election_data:
@@ -47,7 +47,7 @@ print(f"Winner: {statistics.mode(candidate_list)}\n")
 print("-------------------------")
 
 #Writes election results to text file in analysis folder
-output_path = os.path.join('analysis', 'election_results.txt')
+output_path = os.path.join('PyPoll', 'analysis', 'election_results.txt')
 
 with open(output_path, 'w') as txtfile:
     txtfile.write("Election Results\n")
